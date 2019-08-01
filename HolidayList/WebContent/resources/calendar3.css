@@ -3,27 +3,11 @@
  * Docs & License: http://arshaw.com/fullcalendar/
  * (c) 2013 Adam Shaw
  */
- /*@import url("https://fonts.googleapis.com/css?family=Cantarell:i|Droid+Serif:700");
-  latin */
-@font-face {
-  font-family: 'Cantarell';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Cantarell Oblique'), local('Cantarell-Oblique'), url(https://fonts.gstatic.com/s/cantarell/v9/B50LF7ZDq37KMUvlO015iZJpNKs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin */
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(https://fonts.gstatic.com/s/droidserif/v10/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+ @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 td.fc-day {
 
 background:#FFF !important;
-font-family: 'Cantarell', Droid Serif;
+font-family: 'Roboto', sans-serif;
 
 }
 td.fc-today {
@@ -35,7 +19,7 @@ td.fc-today {
  
 .fc-first th{
 	font-family: 'Roboto', sans-serif;
-    background:#ff8000!important;
+    background:#9675ce !important;
 	color:#FFF;
 	font-size:14px !important;
 	font-weight:500 !important;
@@ -57,7 +41,7 @@ td.fc-today {
 	
 .fc table {
 	border-collapse: collapse;
-	border-spacing: 5;
+	border-spacing: 0;
 	}
 	
 html .fc,
@@ -113,7 +97,7 @@ html .fc,
 }
 	span.fc-button {
     font-family: 'Roboto', sans-serif;
-    border-color: #ff8000;
+    border-color: #9675ce;
 	color: #9675ce;
 }
 .fc-state-down, .fc-state-active {
@@ -231,7 +215,7 @@ html .fc,
 	}
 
 /*
-	Our default prev/next buttons use HTML entities like ‹ › « »
+	Our default prev/next buttons use HTML entities like â€¹ â€º Â« Â»
 	and we'll try to make them look good cross-browser.
 */
 
@@ -243,7 +227,7 @@ html .fc,
 	}
 
 .fc-button-prev .fc-text-arrow,
-.fc-button-next .fc-text-arrow { /* for ‹ › */
+.fc-button-next .fc-text-arrow { /* for â€¹ â€º */
 	font-weight: bold;
 	}
 	
@@ -744,5 +728,3 @@ table.fc-header{
 .fc-event .ui-resizable-handle {
 	display: none !important;
 	}
-	
-	
