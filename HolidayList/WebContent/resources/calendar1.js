@@ -100,8 +100,8 @@ var rtlDefaults = {
 		right: 'title'
 	},
 	buttonText: {
-		prev: "<span class='fc-text-arrow'>next</span>",
-		next: "<span class='fc-text-arrow'></span>",
+		prev: "<span class='fc-text-arrow'><</span>",
+		next: "<span class='fc-text-arrow'>></span>",
 		prevYear: "<span class='fc-text-arrow'>>></span>",
 		nextYear: "<span class='fc-text-arrow'><<</span>"
 	},
@@ -270,8 +270,8 @@ function Calendar(element, options, eventSources) {
 			element.addClass('ui-widget');
 		}
 
-		/*content = $("<div class='fc-content' style='position:relative'/>")
-			.prependTo(element);*/
+		content = $("<div class='fc-content' style='position:relative'/>")
+			.prependTo(element);
 
 		header = new Header(t, options);
 		headerElement = header.render();
@@ -303,7 +303,7 @@ function Calendar(element, options, eventSources) {
 	}
 	
 	
-	/*function destroy() {
+	function destroy() {
 
 		if (currentView) {
 			trigger('viewDestroy', currentView, currentView, currentView.element);
@@ -315,7 +315,7 @@ function Calendar(element, options, eventSources) {
 		header.destroy();
 		content.remove();
 		element.removeClass('fc fc-rtl ui-widget');
-	}*/
+	}
 	
 	
 	function elementVisible() {
@@ -540,7 +540,7 @@ function Calendar(element, options, eventSources) {
 
 
 	/* Header Updating
-	-----------------------------------------------------------------------------
+	-----------------------------------------------------------------------------*/
 
 
 	function updateTitle() {
@@ -560,7 +560,7 @@ function Calendar(element, options, eventSources) {
 	
 
 
-	Selection
+	/* Selection
 	-----------------------------------------------------------------------------*/
 	
 
@@ -640,7 +640,7 @@ function Calendar(element, options, eventSources) {
 
 
 	/* Height "Freezing"
-	-----------------------------------------------------------------------------
+	-----------------------------------------------------------------------------*/
 
 
 	function freezeContentHeight() {
@@ -662,7 +662,7 @@ function Calendar(element, options, eventSources) {
 	
 	
 	
-	Misc
+	/* Misc
 	-----------------------------------------------------------------------------*/
 	
 	
@@ -694,7 +694,7 @@ function Calendar(element, options, eventSources) {
 	
 	
 	/* External Dragging
-	------------------------------------------------------------------------
+	------------------------------------------------------------------------*/
 	
 	if (options.droppable) {
 		$(document)
@@ -720,7 +720,7 @@ function Calendar(element, options, eventSources) {
 
 }
 
-;;*/
+;;
 
 function Header(calendar, options) {
 	var t = this;
@@ -6105,6 +6105,6 @@ function HorizontalPositionCache(getElement) {
 	
 }
 
-;
-}
+;;
+
 })(jQuery);
